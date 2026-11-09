@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function (l) {
+        if (l.search[1] === '/') {
+          var d = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + d + l.hash)
+        }
+      })(window.location)
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Health Naturally Durshet</title>
+    <meta
+      name="description"
+      content="Health Naturally @ Durshet — an abode for peace, health, and learning to live, in the hills of Durshet, Raigad."
+    />
+    <meta name="author" content="Health Naturally Durshet" />
+    <meta name="theme-color" content="#052E57" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Health Naturally" />
+
+    <meta property="og:title" content="Health Naturally Durshet" />
+    <meta
+      property="og:description"
+      content="Nature cure, yoga and natural living at Health Naturally @ Durshet, Raigad."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://health-naturally-durshet.com/" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Health Naturally Durshet" />
+    <meta
+      name="twitter:description"
+      content="Nature cure, yoga and natural living at Health Naturally @ Durshet, Raigad."
+    />
+    <script type="module" crossorigin src="/assets/index-C016KiGI.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BJvdrTzw.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
